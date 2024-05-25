@@ -1,0 +1,76 @@
+
+
+/* searchBtn light & dark theme color */
+.search-icon path {
+    fill: none !important;
+    stroke: black !important;
+}
+
+.dark-theme .search-icon path {
+    fill: none !important;
+    stroke: white !important;
+}
+
+/* seachBtn */
+.search-button {
+    position: absolute;
+    margin-left: 20%;
+    padding-right: 5%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* search input */
+.search-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+
+}
+
+.dark-theme .search-form input {
+    background-color: #1C1D1F !important;
+}
+
+.search-form input {
+    font-family: LetteraMonoLL;
+    font-size: 14px;
+    color: black;
+    border: none;
+    background-color: #fbfbfb;
+    height: 2.5rem;
+    width: 100%;
+    padding: 2% 12%;
+    border-radius: 42px;
+}
+.dark-theme .search-form input{
+    color: white;
+}
+
+.search-form input[type="text"]:focus {
+    outline: none;
+    border: none;
+    /* Remove border when input is focused */
+}
+
+.dark-theme input::placeholder {
+    color: #ffffff; 
+  }
+
+  /* Hide the default dropdown icon */
+input[type="text"]::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+
+  @media only screen and (max-width: 768px){
+    .Nav .search-form{
+      width: 70% !important;
+      padding: 0% 12%;
+    }
+    .search-button{
+        margin-left: 30%;
+        padding-right: 1%;
+    }
+  }

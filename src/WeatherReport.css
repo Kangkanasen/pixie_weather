@@ -1,0 +1,364 @@
+/*import fonts */
+@font-face {
+    font-family: LetteraMonoLL;
+    src: url('fonts/Lettera Mono LL/Lettera Mono LL.ttf');
+}
+
+@font-face {
+    font-family: Nothing;
+    src: url('fonts/ndot-47-inspired-by-nothing/ndot-47-inspired-by-nothing.ttf');
+}
+
+/* weather-data display */
+.weather-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.report {
+    width: 325px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1d1f;
+    border-radius: 50%;
+    color: #eee;
+
+}
+
+.report p {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+
+}
+
+.report span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    font-family: Nothing;
+    color: #1c1d1f;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.location svg {
+    width: 1em;
+    height: 1em;
+}
+
+.weather-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 10%;
+    font-family: Nothing;
+    color: #1c1d1f;
+}
+
+.weather-icon svg {
+    width: 50%;
+    /* Adjust the width as needed */
+    height: auto;
+    fill: black;
+    /* Ensure the SVG icons are filled with black color */
+    margin: 0 !important;
+}
+
+/* row2 design weather of seven days*/
+.row2 {
+    height: 239px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fbfbfb;
+    margin-top: 10%;
+}
+
+.weather-icons svg{
+    object-fit: cover;
+    width: 100%;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.forecast-item span {
+    color: #636363;
+    font-family: LetteraMonoLL;
+    font-size: 24px;
+}
+
+.forecast-item h2 {
+    color: #131313;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* other details in row 3 display in grid */
+
+.row3 {
+    width: 100%;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.row3 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8%;
+    width: 290px;
+    height: 310px;
+    background-color: #fbfbfb;
+    color: #1c1d1f;
+    border-radius: 10%;
+    margin-top: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 310px;
+    color: #1c1d1f;
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.card .col {
+    width: 290px;
+    height: 150px;
+    padding: 12%;
+    background-color: #fbfbfb;
+    border-radius: 110px;
+}
+
+.card .two {
+    background-color: #d71a21 !important;
+    color: #fff;
+}
+
+.card span {
+    font-family: Nothing;
+}
+
+.card h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.row3 span {
+    font-family: Nothing;
+    font-size: 24px;
+}
+
+.row3 h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.row3 .box svg {
+    margin: 0 auto;
+}
+
+.compass {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.compass p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid #d71a21;
+    /* Arrow color */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -100%) rotate(0deg);
+    /* Initial rotation */
+}
+
+/* src/Humidity.css */
+.box .circle {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 50% !important;
+    position: relative !important;
+    background-color: transparent;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+.box .round {
+    width: 100%;
+    background: #000;
+    /* Color of the filled portion */
+    position: absolute;
+    bottom: 0;
+    transition: height 0.5s ease-in-out;
+}
+
+.gauge {
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .location {
+        font-size: 18px;
+        margin: 30px 0px;
+    }
+
+    .location svg {
+        width: 14px;
+        margin-right: 4px;
+    }
+
+    .report {
+        width: 150px;
+        height: 150px;
+    }
+
+    .report span {
+        font-size: 30px;
+    }
+
+    .report p {
+        font-size: 16px;
+    }
+
+    .row2 {
+        height: 139px;
+    }
+
+    .forecast-item {
+        gap: 6px;
+    }
+
+    .forecast-item span,
+    .forecast-item h2 {
+        font-size: 14px;
+    }
+
+    .row2 .weather-icons{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .weather-icons svg{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .row3 {
+        width: 100%;
+        grid-template-rows: auto auto auto;
+        /* Two rows */
+        grid-template-columns: auto auto;
+    }
+
+    .row3 .box {
+        width: 130px;
+        height: 130px;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 90px;
+        height: 90px;
+        gap: 16px;
+       
+    }
+
+    .card .col {
+        width: 130px;
+        height: 60px;
+        padding: 14%;
+    }
+
+    .row3 span {
+        font-size: 14px;
+    }
+
+    .row3 h2 {
+        font-size: 16px;
+    }
+
+    .compass {
+        width: 65px;
+        height: 65px;
+    }
+
+    .compass p {
+        font-size: 8px;
+    }
+
+    .arrow {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 15px solid #d71a21;
+
+    }
+
+    .box .circle {
+        width: 70px;
+        height: 70px;
+        background-color: transparent;
+    }
+    .row3 .box svg{
+        width: 100px;
+        height: 70px;
+    }
+
+}

@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.container{
+  max-width: 1080px;
+  margin: 20px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Apply default dark theme styles */
+body {
+  overflow-x: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  padding: 3% 10%;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-light);
+  color: white; /* Default text color for dark theme */
+}
+.logo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 8%;
+}
+.Nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Define CSS variables for dark theme */
+:root {
+  --color-light: #e7e9e8;
+  --color-darkGray: #9e9e9e;
+  --color-gray: #9e9e9e;
+  --color-offwhite: #0c0f14;
+  --shadow-color: #cecece;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/* Other global styles can go here */
+
+
+@media only screen and (max-width: 768px){
+  body{
+    padding: 5% ;
   }
-  to {
-    transform: rotate(360deg);
+  .switch {
+    width: 45px;
+    height: 25px;
+    margin: 0;
+  }
+  .Nav .pixie{
+    display: none;
+    height: 0;
+    width: 0;
   }
 }

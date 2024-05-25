@@ -1,13 +1,28 @@
+/* Apply default dark theme styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Arial, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--color-dark);
+  color: white; /* Default text color for dark theme */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Define CSS variables for dark theme */
+:root {
+  --color-dark: #0c0f14;
+  --color-darkGray: #21262e;
+  --color-gray: #52555a;
+  --color-offwhite: #cecece;
+  --shadow-color: var(--color-dark);
 }
+
+/* Define CSS variables for light theme */
+:root.light-theme {
+  --color-dark: #cecece;
+  --color-darkGray: #9e9e9e;
+  --color-gray: #9e9e9e;
+  --color-offwhite: #0c0f14;
+  --shadow-color: #cecece;
+}
+
+/* Other global styles can go here */
