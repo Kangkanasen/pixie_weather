@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pixie_weather/static/css/main.c78f212e.css",
-    "main.js": "/pixie_weather/static/js/main.b74b7798.js",
+    "main.css": "/pixie_weather/static/css/main.19d4a108.css",
+    "main.js": "/pixie_weather/static/js/main.69c9a718.js",
     "static/js/453.59391ef7.chunk.js": "/pixie_weather/static/js/453.59391ef7.chunk.js",
     "static/media/ndot-47-inspired-by-nothing.ttf": "/pixie_weather/static/media/ndot-47-inspired-by-nothing.0a3e7069a983979995b6.ttf",
     "static/media/Lettera Mono LL.ttf": "/pixie_weather/static/media/Lettera Mono LL.53840f4450c2a0261039.ttf",
@@ -25,12 +25,12 @@
     "static/media/thunderstorm.svg": "/pixie_weather/static/media/thunderstorm.82ec39fcd55552755d1ecc1a71488736.svg",
     "index.html": "/pixie_weather/index.html",
     "static/media/search-icon.svg": "/pixie_weather/static/media/search-icon.4397b22b8b116f6cb9e47b64615ccf8c.svg",
-    "main.c78f212e.css.map": "/pixie_weather/static/css/main.c78f212e.css.map",
-    "main.b74b7798.js.map": "/pixie_weather/static/js/main.b74b7798.js.map",
+    "main.19d4a108.css.map": "/pixie_weather/static/css/main.19d4a108.css.map",
+    "main.69c9a718.js.map": "/pixie_weather/static/js/main.69c9a718.js.map",
     "453.59391ef7.chunk.js.map": "/pixie_weather/static/js/453.59391ef7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c78f212e.css",
-    "static/js/main.b74b7798.js"
+    "static/css/main.19d4a108.css",
+    "static/js/main.69c9a718.js"
   ]
 }
